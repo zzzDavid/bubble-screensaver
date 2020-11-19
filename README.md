@@ -27,7 +27,7 @@ Anyway, please enjoy this screensaver.
 
 ## Compile
 
-This projected is compiled with XCode 12.1. The entire XCode project is in the repo. If you would like to make changes, just clone it and compile with XCode 12, it should be fine.
+This project is compiled with XCode 12.1. The entire XCode project is in the repo. If you would like to make changes, just clone it and compile with XCode 12, it should be fine.
 
 ## Installation
 
