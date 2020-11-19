@@ -52,11 +52,8 @@ class bubble: ScreenSaverView {
             videoView.translatesAutoresizingMaskIntoConstraints = false
             self.videoView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
             self.videoView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-            //self.videoView.widthAnchor.constraint(lessThanOrEqualTo: self.widthAnchor, multiplier: 0.5).isActive = true
-            //self.videoView.heightAnchor.constraint(lessThanOrEqualTo: self.heightAnchor, multiplier: 0.5).isActive = true
-            self.videoView.widthAnchor.constraint(equalToConstant: 500).isActive = true
-            self.videoView.heightAnchor.constraint(equalToConstant: 500).isActive = true
-            
+            self.videoView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.5).isActive = true
+            self.videoView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.5).isActive = true
             
         }
 
