@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9600E5B325669FF40018D709 /* bubble_screensaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9600E5B225669FF40018D709 /* bubble_screensaverView.h */; };
-		9600E5B525669FF40018D709 /* bubble_screensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9600E5B425669FF40018D709 /* bubble_screensaverView.m */; };
+		9600E5BF2566A03B0018D709 /* bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600E5BE2566A03B0018D709 /* bubble.swift */; };
+		9600E5C32566B6D20018D709 /* SoapBubble1080p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9600E5C22566B6D20018D709 /* SoapBubble1080p.mov */; };
+		9600E5CB2566F6890018D709 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 9600E5C92566F6890018D709 /* thumbnail.png */; };
+		9600E5CC2566F6890018D709 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9600E5CA2566F6890018D709 /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9600E5AF25669FF30018D709 /* bubble-screensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bubble-screensaver.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9600E5B225669FF40018D709 /* bubble_screensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubble_screensaverView.h; sourceTree = "<group>"; };
-		9600E5B425669FF40018D709 /* bubble_screensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bubble_screensaverView.m; sourceTree = "<group>"; };
 		9600E5B625669FF40018D709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9600E5BE2566A03B0018D709 /* bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bubble.swift; sourceTree = "<group>"; };
+		9600E5C22566B6D20018D709 /* SoapBubble1080p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = SoapBubble1080p.mov; path = "bubble-screensaver/SoapBubble1080p.mov"; sourceTree = "<group>"; };
+		9600E5C92566F6890018D709 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = "bubble-screensaver/thumbnail.png"; sourceTree = "<group>"; };
+		9600E5CA2566F6890018D709 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "bubble-screensaver/thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,9 @@
 		9600E5A525669FF30018D709 = {
 			isa = PBXGroup;
 			children = (
+				9600E5C92566F6890018D709 /* thumbnail.png */,
+				9600E5CA2566F6890018D709 /* thumbnail@2x.png */,
+				9600E5C22566B6D20018D709 /* SoapBubble1080p.mov */,
 				9600E5B125669FF40018D709 /* bubble-screensaver */,
 				9600E5B025669FF30018D709 /* Products */,
 			);
@@ -48,9 +55,8 @@
 		9600E5B125669FF40018D709 /* bubble-screensaver */ = {
 			isa = PBXGroup;
 			children = (
-				9600E5B225669FF40018D709 /* bubble_screensaverView.h */,
-				9600E5B425669FF40018D709 /* bubble_screensaverView.m */,
 				9600E5B625669FF40018D709 /* Info.plist */,
+				9600E5BE2566A03B0018D709 /* bubble.swift */,
 			);
 			path = "bubble-screensaver";
 			sourceTree = "<group>";
@@ -62,7 +68,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9600E5B325669FF40018D709 /* bubble_screensaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,7 @@
 				TargetAttributes = {
 					9600E5AE25669FF30018D709 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
@@ -123,6 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9600E5CB2566F6890018D709 /* thumbnail.png in Resources */,
+				9600E5CC2566F6890018D709 /* thumbnail@2x.png in Resources */,
+				9600E5C32566B6D20018D709 /* SoapBubble1080p.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9600E5B525669FF40018D709 /* bubble_screensaverView.m in Sources */,
+				9600E5BF2566A03B0018D709 /* bubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +263,22 @@
 		9600E5BA25669FF40018D709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "bubble-screensaver/thumbnail@2x.png bubble-screensaver/thumbnail.png bubble-screensaver/SoapBubble1080p.mov";
 				DEVELOPMENT_TEAM = ZBC4F58GF3;
 				INFOPLIST_FILE = "bubble-screensaver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-6308149.bubble-screensaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,13 +286,21 @@
 		9600E5BB25669FF40018D709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "bubble-screensaver/thumbnail@2x.png bubble-screensaver/thumbnail.png bubble-screensaver/SoapBubble1080p.mov";
 				DEVELOPMENT_TEAM = ZBC4F58GF3;
 				INFOPLIST_FILE = "bubble-screensaver/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-6308149.bubble-screensaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

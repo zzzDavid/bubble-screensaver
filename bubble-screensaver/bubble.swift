@@ -34,7 +34,7 @@ class bubble: ScreenSaverView {
             self.playerLooper = AVPlayerLooper(player: self.queuePlayer, templateItem: playerItem)
             self.playerLayer = AVPlayerLayer(player: self.queuePlayer)
 
-            //let videoView = NSView(frame: NSMakeRect(frame.minX + NSWidth(frame)/4, frame.minY + NSHeight(frame)/4, NSWidth(frame)/2, NSHeight(frame)/2))
+
             self.videoView = NSView(frame: NSMakeRect(0, 0, NSWidth(frame)/2, NSHeight(frame)/2))
             self.videoView.wantsLayer = true
             self.playerLayer.frame = videoView.frame
