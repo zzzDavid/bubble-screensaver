@@ -11,7 +11,7 @@
 
 **This project is a latest refactor of [SwiftBubble](https://github.com/nemesit/SwiftBubble), open-sourced by [@nemesit](https://github.com/nemesit).** Many thanks to the great project!
 
-According to the original author, this screensaver is inspired by the MacBook 12" promotional video. I love this screensaver very much for quite a long time. But the original copy is not compatible with the latest MacOS Mojave/Big Sur anymore. So, I decided to refator this project in Swift 5.2.
+According to the original author, this screensaver is inspired by the MacBook 12" promotional video. I love this screensaver very much for quite a long time. But the original copy is not compatible with the latest MacOS Catalina/Big Sur anymore. So, I decided to refator this project in Swift 5.2.
 
 I used the higher-resolution video in the original repository, and updated video player and layout with the latest API.
 
