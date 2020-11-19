@@ -31,7 +31,7 @@ This projected is compiled with XCode 12.1. The entire XCode project is in the r
 
 ## Installation
 
-Check the latest release. Unzip file `bubble-screensaver.saver.zip` to get `bubble-screensaver.zip`, double click to install.
+Check the latest release. Unzip file `bubble-screensaver.saver.zip` to get `bubble-screensaver.saver`, double click to install.
 
 
 
